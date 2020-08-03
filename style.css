@@ -1,0 +1,43 @@
+#user-info {
+    grid-area: usinfo;
+    display: block;
+   
+}
+#user-info p {
+    display: block;
+   
+}
+#user-info ul{
+    font-size: 20px;
+}
+#user-info li{
+    font-size: 12px;
+}
+
+#list-users {
+    grid-area: lst;
+    height: 530px;
+    overflow: scroll;
+}
+
+#buttons{
+    grid-area: butt;
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+
+#container{
+    display:grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: 
+     "butt butt"
+     "lst usinfo"
+    ;
+
+}
+
+.address-page {
+border: orangered;
+border-width: 10px;
+border-style: solid;
+}
