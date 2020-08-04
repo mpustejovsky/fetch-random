@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
@@ -7,31 +8,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>randomuser Practice</title>
 </head>
+
 <body>
-  <header>Welcome to My Address Book.  20 of my USA contacts shown on window load. Also check out my Canadian Contacts.</header>
+  <header>Welcome to My Address Book. 20 of my USA contacts shown on window load. Also check out my other contacts from
+    different countries.
+  </header>
   <!-- When you click this button the posts collected from the fetch request will be displayed below in the ul element with the id='all-posts' -->
   <div id="container">
-  <div id="buttons">
-  <button onclick="getUsers('ca')">Fetch Canadian Users</button>
-  <button onclick="getUsers('us')">Fetch USA Users</button>
-  <button onclick="displayUsers()">Display Users</button>
-  <button onclick="clearList('all-users')">Clear Display of Users</button>
-  <button onclick="sortList()">Sort List Alphabetically</button>
+    <div id="buttons">
+      <button onclick="getUsers('ca')">Canadian Contacts</button>
+      <button onclick="getUsers('us')">USA Contacts</button>
+      <button onclick="getUsers('fr')">French Contacts</button>
+      <button onclick="getUsers('au')">Australian Contacts</button>
+      <button onclick="getUsers('gb')">United Kingdom Contacts</button>
+      <button onclick="displayUsers()">Display Users</button>
+      <button onclick="clearList('all-users')">Clear Users</button>
+      <button onclick="sortList()">Sort Alphabetically</button>
+    </div>
+
+
+
+
+    <div id='list-users'>
+      <div id='country-item'>
+        <h3>All Users</h3>
+      </div>
+      <ul id='all-users'></ul>
+    </div>
+
+    <div id='user-info'>
+      Click a Button to See Complete User Info<br>
+      <ul id='list-userInfo'></ul>
+    </div>
   </div>
-    
-
-  
-
-  <div id='list-users'>
-    <h3>All Users</h3>
-    <ul id='all-users'></ul>
-  </div>
-
-<div id='user-info'>
-Click a Button to See Complete User Info<br>
-   <ul id='list-userInfo'></ul>
-</div>
-</div>
   <script src="./main.js"></script>
 </body>
+
 </html>
